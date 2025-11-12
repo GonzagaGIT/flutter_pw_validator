@@ -56,26 +56,25 @@ class AppHome extends StatelessWidget {
                   new SizedBox(
                     height: 5,
                   ),
-                  new FlutterPwValidator(
-                    key: validatorKey,
-                    controller: controller,
-                    minLength: 8,
-                    uppercaseCharCount: 2,
-                    lowercaseCharCount: 3,
-                    numericCharCount: 3,
-                    specialCharCount: 1,
-                    normalCharCount: 3,
-                    width: 400,
-                    height: 200,
-                    onSuccess: () {
-                      print("MATCHED");
-                      ScaffoldMessenger.of(context).showSnackBar(new SnackBar(
-                          content: new Text("Password is matched")));
-                    },
-                    onFail: () {
-                      print("NOT MATCHED");
-                    },
-                  ),
+                  // new FlutterPwValidator(
+                  //   key: validatorKey,
+                  //   controller: controller,
+                  //   minLength: 8,
+                  //   uppercaseCharCount: 2,
+                  //   lowercaseCharCount: 3,
+                  //   numericCharCount: 3,
+                  //   specialCharCount: 1,
+                  //   normalCharCount: 3,
+                  //   width: 400,
+                  //   onSuccess: () {
+                  //     print("MATCHED");
+                  //     ScaffoldMessenger.of(context).showSnackBar(new SnackBar(
+                  //         content: new Text("Password is matched")));
+                  //   },
+                  //   onFail: () {
+                  //     print("NOT MATCHED");
+                  //   },
+                  // ),
                 ],
               ),
               )

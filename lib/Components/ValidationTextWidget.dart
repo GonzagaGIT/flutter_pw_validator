@@ -14,15 +14,13 @@ class ValidationTextWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return new Row(
       children: [
-        new Container(
-          width: SizeConfig.width! * 0.03,
-          height: SizeConfig.width! * 0.03,
-          child: new CircleAvatar(
-            backgroundColor: color,
-          ),
+        Icon(
+          Icons.check,
+          size: 16,
+          color: color,
         ),
         Padding(
-          padding: EdgeInsets.only(left: SizeConfig.width! * 0.03),
+          padding: EdgeInsets.only(left: SizeConfig.width! * 0.02),
           child: new Text(
             text.replaceFirst("-", value.toString()),
             style:
